@@ -1,0 +1,9 @@
+{% if current_list %}
+    <ul>
+    {% for current in current_list %}
+        <li><a href="/movie/{{ current.id }}/">{{ current.current_title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>질문이 없습니다.</p>
+{% endif %}
